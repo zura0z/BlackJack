@@ -1,0 +1,192 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #02111B;
+}
+h1{
+    text-align: center;
+    background: -webkit-linear-gradient(#eee, rgb(182, 182, 182));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+h2{
+    color: #FFFCF9;
+    text-align: center;
+    border: 2px solid #131515;
+    padding: 0;
+    margin-bottom: 0px;
+    background-color: #131515;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+p{
+ color: #FFFCF9;
+ margin-bottom: 80px;
+}
+.scores{
+    border: 2px solid #131515;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    height: 400px;
+    justify-content: space-around;
+    background: url(./images/bg-img.jpg) center;
+}
+.your, .dealer{
+   text-align: center;
+   flex: 1;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin-top: 10px;
+}
+table{
+    width: 250px;
+    margin: 15px auto;
+    color: #5D737E;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+th, td {
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #3F4045;
+    border-collapse: collapse;
+}
+button{
+    padding: 10px;
+    width: 100px;
+    margin-right: 5px;
+    font-weight: bold;
+    border-style: outset;
+    border-radius: 5px;
+    border-width: 1.2px;
+    outline: none;
+    border-color: #716969;
+    cursor: pointer;
+}
+button:active{
+    border-style: inset;
+}
+
+#hit{
+    background-image: linear-gradient(90deg, rgb(25, 216, 0), rgb(24, 173, 24));
+}
+#stand{ 
+    background-image: linear-gradient(90deg, rgb(251, 255, 0), rgb(205, 218, 31));
+}
+#deal{
+    background-image: linear-gradient(90deg, red, rgb(214, 30, 30));
+}
+
+#hit:hover{
+    background-image: linear-gradient(90deg, rgb(60, 247, 36), rgb(0, 156, 0));
+    box-shadow: 1px 1px 5px black;
+}
+#stand:hover{ 
+    background-image: linear-gradient(90deg, rgb(252, 255, 55), rgb(173, 185, 4));
+    box-shadow: 1px 1px 5px black;
+}
+#deal:hover{
+    background-image: linear-gradient(90deg, rgb(238, 36, 36), rgb(173, 0, 0));
+    box-shadow: 1px 1px 5px black;
+}
+.myCards, .dealerCards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+img{
+    margin-bottom: 15px;
+    height: 90px;
+    border: 0.8px solid rgb(68, 68, 68);
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 1265px){
+    .myCards, .dealerCards{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1065px){
+    .myCards, .dealerCards{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .myCards, .dealerCards{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 700px){
+    p{
+        margin-bottom: 50px;
+    }
+    .container{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 500px){
+    img{
+        height: 70px;
+    }
+    .container{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .myCards, .dealerCards{
+        width: 80%;
+    }
+    img{
+        height: 60px;
+    }
+    button{
+        width: 70px;
+    }
+    .scores{
+        height: 330px;
+    }
+    .container{
+        margin-top: 60px;
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 381px){
+    img{
+        height: 50px;
+    }
+    .container{
+        width: 95%;
+    }
+    .scores{
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 324px){
+    p{
+        margin-bottom: 30px;
+    }
+    .container{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 315px){
+    button{
+        width: 55px;
+    }
+    table{
+        width: 200px;
+        font-size: 14px;
+    }
+    .container{
+        width: 95%;
+    }
+}
